@@ -1,0 +1,44 @@
+include /mixins/a 
+
+header
+  .ids__wrapper.ids__full-width
+    .desktop-header
+      .logo
+        +a.awakeness.sleep(href="/")
+          .logo-icon
+            
+          .logo-text WANNA
+            
+          //- .logo-box
+            img(src="/images/i.svg")
+            p VOCALLS
+
+      .nav
+        include /partials/nav-links
+
+      .mobile-nav
+      
+        .language
+          .language-item
+            span EN
+          .middot ·
+          .language-item
+            a(href="#" data-locale="es-ES") ES
+            
+          
+        
+
+        .burger-icon(href="#") =
+        .mobile-nav-sidebar
+          .close-icon(href="#") ×
+          include /partials/nav-links
+        
+          //.nav-item
+            +a(href="https://app.swaggerhub.com/apis-docs/VocallsInc/Vocalls/1.0.3" target="_blank") API
+          //.nav-item
+            +a(href="/cookies") Cookies
+          //.nav-item
+            +a(href="/privacy-policy") Privacy Policy
+
+          .mobile-sidebar-copywrite 
+            p © 2022 M. Wanna

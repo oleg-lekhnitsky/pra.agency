@@ -1,0 +1,236 @@
+extends /layouts/main.pug
+
+block meta
+  +meta(title="Wanna", description="Wanna x Farferch", og-image="/images/IMG_0202.jpg")
+
+
+
+
+block content
+
+
+
+
+
+  .ids__wrapper.ids__full-width-wanna
+    section 
+      // ссылка на заглавную картинку (первый блок на экране): просто поменять ссылку в скобках, кавычки не удаляем
+      .cover_articles_mobile(style='background-image:url("/images/logo_3d.png")')
+      .cover_articles(style='background-image:url("/images/logo_3d.png")')
+
+      //.cover_articles
+        // ссылка на заглавное видео (первый блок на экране)
+        video.cover(autoplay='autoplay', loop='loop', muted='muted', preload='preload')
+          source(src="https://assets.reebok.com/videos/q_auto,f_auto,g_auto/ad452f7bd78d49a19cd4aba301428ce4_d98c/Reebok_Nano_X_Shoes_Black_EH3094_video.mp4")
+
+
+
+
+      .cover-text
+        // заглавная надпись на первом экране
+        h1.cover Pocket Rocket is an&nbsp;innovative branding&nbsp;agency. We help businesses grow up to&nbsp;an&nbsp;extra 30%&nbsp;a&nbsp;year.
+      .dark-wrapper
+        .ids__wrapper-center  
+          .ids__grid.XXL.ids__grid-inset-S
+            .ids__grid-cell-wanna-two
+
+              
+              // подпись к карточке под логотипом партнера
+              h2 We are a&nbsp;diverse team of&nbsp;thinkers &&nbsp;doers.
+              .ids__stack.M
+              h2 We develop strategies, design identities and launch brands in&nbsp;IT, Fashion Tech, Telecom, Transport &&nbsp;Retail.
+
+
+
+            // карточка с картинкой (меняем ссылкуб кавычки не удаляем)
+            .ids__grid-cell-wanna-two-image 
+                      #slideshow
+                        <div> <img src="/images/lizaveta.png"></div>
+                        <div> <img src="/images/denis.png"> </div>
+                        <div> <img src="/images/darina.png"> </div>
+                        <div> <img src="/images/marinab.png"></div>
+                        <div> <img src="/images/oleg.png"> </div>
+                        <div> <img src="/images/yuli.png"> </div>
+                        <div> <img src="/images/mikita.png"></div>
+                        <div> <img src="/images/karyna.png"> </div>
+                        <div> <img src="/images/ola.png"> </div>
+                        <div> <img src="/images/misha.png"></div>
+                        <div> <img src="/images/marinar.png"> </div>
+                        <div> <img src="/images/kris.png"> </div>
+                        <div> <img src="/images/alice.png"></div>
+                        <div> <img src="/images/alina.png"> </div>
+
+
+
+
+          .ids__stack.M
+          .grid_headings
+            .ids__grid-cell-left
+              h1 Our services
+              .article-info
+                .ids__grid.XXL.ids__grid-inset-S
+                  .ids__grid-cell-small
+                    // подзаголовок слева
+                    h2 Brand Strategy Development
+                  .ids__grid-cell-big
+                    // список (ul), li — пункт списка. добавить пункт: li, пробел, текст
+                    //li в столбике на одном уроне
+                    ul
+                      li Market Research & Benchmarking
+                      li Business & Product Research
+                      li Brand Value Proposition
+                      li Interviews (15+)
+                      li Strategic Session
+                      li Brand Platform & Strategy
+                      li Communication Platform
+                      li Design Session
+                      li Employer Brand Strategy
+                      li Focus Groups
+                      li Brand Architecture
+                .divider
+                .ids__grid.XXL.ids__grid-inset-S
+                  // подзаголовок слева
+                  .ids__grid-cell-small
+                    h2 Brand Development
+                  .ids__grid-cell-big
+                    // список (ul), li — пункт списка
+                    ul  
+                      li Logo Design
+                      li Visual Identity
+                      li Design System
+                      li Typography, Imagery, Motion
+                      li Guidelines & Brandbook
+                      li Brand Implementation
+                      li Naming
+                .divider
+                .ids__grid.XXL.ids__grid-inset-S
+                  // подзаголовок слева
+                  .ids__grid-cell-small
+                    h2 Employer Brand Development
+
+                  // список (ul), li — пункт списка, figcaption – дополнительная информация
+                  .ids__grid-cell-big
+                    ul  
+                      li Employer brand strategy
+                      li Culture, EVP and&nbsp;employee experience
+                      li Onboarding Toolkits
+                .divider
+                .ids__grid.XXL.ids__grid-inset-S
+                  // подзаголовок слева
+                  .ids__grid-cell-small
+                    h2 Brand Launch & Support
+
+                  // список (ul), li — пункт списка, figcaption – дополнительная информация
+                  .ids__grid-cell-big
+                    ul  
+                      li New Brand Pitch Engaging & Onboarding Teams
+                      li Draft Launch Strategy
+                      li Art-direction
+                      li Communication Design
+                      li Motion & Film
+                      li Digital product design
+                      li Event design
+                      li Environmental and retail design
+
+            .ids__grid-cell-awards
+                  h1 Awards
+                  h3 We’ve got several Oscars of&nbsp;design world:
+
+                  .ids__grid-cell
+                    // подзаголовок слева
+                    ul 
+                      li 
+                        a(href="https://www.red-dot.org")  
+                          h3 Red Dot Design Awards 2021
+                        p Wanna, ItRex
+                        p Branding – Winner
+                        .divider
+                      li 
+                        a(href="https://oneshow.org/")   
+                          h3 The One Show 2021
+                        p Wanna
+                        p Branding – Merit
+                        .divider
+                      li 
+                        a(href="https://www.effie.org/")
+                          h3 Effie 2021
+                        p Generation Z
+                        p Project – Special Prize
+                        .divider
+                      li 
+                        a(href="https://adfest.by/en")
+                          h3 White Square 2021
+                        p Wanna
+                        p Branding – Bronze
+                        .divider
+                      li 
+                        a(href="https://creative-stories.com.ua/")
+                          h3 KIAF 2021
+                        p Wanna, ItRex
+                        p Branding – Silver, Branding – Shortlist
+                        .divider
+
+                      li 
+                        a(href="https://www.canneslions.com/enter/young-lions-competitions")
+                          h3 Young Cannes Lions
+                        p No silence for violence
+                        p Design – Gold
+                        .divider
+                      li
+                        a(href="https://festival.ru/") 
+                          h3 Red Apple Awards
+                        p Wanna, ItRex
+                        p Branding – Bronze, Branding – Silver
+          .ids__stack.M
+          h2 Trusted by industry icons and&nbsp;young startups:
+          include /partials/logos.pug
+
+         
+
+          .ids__stack.M
+          h1.landing
+            span We build
+              .intext-image
+                    img(src="images/rocket.svg")
+              //br
+              span brave
+              br 
+              span brands with purpose, 
+              br
+              span which people 
+                .intext-image
+                    img(src="images/love.svg")
+              span  love 
+              br
+              span and connect to.
+              
+              .ids__stack.XS
+              h2 And this is how we do it:
+
+              //span в&nbsp;сфере рекламы 
+          .ids__grid.M.ids__grid-inset-L
+            .ids__grid-cell
+              figure.XS
+                img(src="/images/briefing.svg")
+              h3 Briefing
+              p Debrief, Set goals. Define Agency Task, Timing & Budget
+            .ids__grid-cell
+              figure.XS
+                img(src="/images/research.svg")
+              h3 Research
+              p Research Market, Competitors, Clients, Employees, Business Processes to understand real environment
+            .ids__grid-cell
+              figure.XS
+                img(src="/images/strategy.svg")
+              h3 Strategy
+              p Develop Brand Essence, Brand Strategy and it's details
+            .ids__grid-cell
+              figure.XS
+                img(src="/images/design.svg")
+              h3 Design
+              p Develop visual & verbal communication
+            .ids__grid-cell
+              figure.XS
+                img(src="/images/engagement.svg")
+              h3 Engagement
+              p Engage & consult teams, deliver guides, support & art-direct

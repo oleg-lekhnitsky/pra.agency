@@ -1,0 +1,52 @@
+include /mixins/a
+
+header
+  .tmp-header
+    +a.logo(href="/")
+      .img-wrapper
+        img(src="/favicon.png")
+    
+    
+    .tmp-header-right
+      +a(href="/design-system") About Us
+      +a(href="/design-system") Commitment
+      +a(href="/design-system") FAQ
+      +a(href="/design-system") Learn
+      +a(href="/design-system") Themes
+      +a(href="/design-system") Pricing
+      +a(href="/design-system") Carrers
+    div
+      button.S(href="/design-system") Join the waitlist
+      button.S(href="/design-system") Arabic
+    .burger
+      details
+        summary Menu
+        li 
+          +a(href="/design-system") About Us
+        li 
+          +a(href="/design-system") Commitment
+        li 
+          +a(href="/design-system") FAQ
+        li 
+          +a(href="/design-system") Learn
+        li 
+          +a(href="/design-system") Themes
+        li 
+          +a(href="/design-system") Pricing
+        li 
+          +a(href="/design-system") Carrers
+        div
+          button.S(href="/design-system") Join the waitlist
+          button.S(href="/design-system") Arabic
+
+      //.img-wrapper
+        img(src="/favicon.png")
+      //- шапка сайта
+
+    //.tmp-header-right
+      .flex-wrap
+        div
+          input.L(type='text' placeholder='email@example.com')
+        div
+          button.L(href="/design-system") Subscribe
+            //- шапка сайта

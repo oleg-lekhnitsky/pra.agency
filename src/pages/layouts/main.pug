@@ -1,0 +1,27 @@
+include /mixins/meta
+
+doctype html
+
+html
+  head
+    block meta
+      +meta()
+
+    block stylesheets
+      link(rel='stylesheet', href=assetPath('/assets/main.css'))
+      link(rel="icon", href="/favicon.png" )
+      
+      
+  body.ids
+    include /partials/header_design_review.pug
+    main
+      block content
+
+    include /partials/footer_design_review.pug
+    
+    block javascripts
+      script(src=assetPath('/assets/main.js'))
+
+
+
+

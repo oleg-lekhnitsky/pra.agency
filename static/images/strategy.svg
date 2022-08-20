@@ -1,0 +1,12 @@
+<svg width="125" height="125" viewBox="0 0 125 125" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_1231_955" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="125" height="125">
+<rect width="125" height="125" rx="20" fill="#EE5424"/>
+</mask>
+<g mask="url(#mask0_1231_955)">
+<rect width="125" height="125" rx="20" fill="#EE5424"/>
+<ellipse rx="34.8425" ry="46.063" transform="matrix(-1 0 0 1 103.157 61.5513)" fill="#F0F0F0"/>
+<ellipse rx="34.8425" ry="46.063" transform="matrix(-1 0 0 1 22.8425 61.5513)" fill="#F0F0F0"/>
+<ellipse rx="21.2598" ry="28.3465" transform="matrix(-1 0 0 1 116.74 61.5506)" fill="#000105"/>
+<ellipse rx="21.2598" ry="28.3465" transform="matrix(-1 0 0 1 36.4252 61.5506)" fill="#000105"/>
+</g>
+</svg>

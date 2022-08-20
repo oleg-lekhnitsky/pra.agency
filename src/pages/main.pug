@@ -1,0 +1,120 @@
+extends /layouts/main.pug
+
+block meta
+  +meta(title="Wanna", description="Wanna x Farferch", og-image="/images/IMG_0202.jpg")
+
+block content
+
+
+
+
+
+  .ids__wrapper.ids__full-width-wanna
+    section 
+      // ссылка на заглавную картинку (первый блок на экране)
+      //.cover_articles(style='background-image:url("https://static.tildacdn.com/tild6531-6361-4132-a532-666533616663/Lotte20Andersen20-20.jpg")')
+      .cover_articles
+        // ссылка на заглавное видео (первый блок на экране)
+        video.cover(autoplay='autoplay', loop='loop', muted='muted', preload='preload')
+          source(src="https://by-wanna-kicks-public-dev.s3.amazonaws.com/fashion/Wanna-site-eng.mp4")
+
+
+
+
+      .cover-text-no-bg
+        video.cover(autoplay='autoplay', loop='loop', muted='muted', preload='preload')
+          source(src="https://by-wanna-kicks-public-dev.s3.amazonaws.com/fashion/Wanna-site-eng.mp4")
+      video(autoplay='autoplay', loop='loop', muted='muted', preload='preload')
+            source(src="https://by-wanna-kicks-public-dev.s3.amazonaws.com/videos/WANNA-TRY-ON.mp4")
+
+      .dark-wrapper
+        .ids__wrapper-center  
+          h1 Revolutionize customer experience with Wanna AR solutions
+
+          
+          h2 Our insights
+          h2 We are trusted by
+          h2 Why choose Wanna 
+          h2 They talk about us
+          h1 We make fashion available to everyone through digital yet realistic total look experiences
+          .ids__grid.XXL.ids__grid-inset-S
+            .ids__grid-cell-wanna-two
+
+
+
+              .article-logo
+                // image — ссылка на логотип, href — ссылка для перехода (например, лого гуччи, сайт гуччм)
+                a(href = 'https://wanna.fashion/gucci')
+                  img(src="/images/farfetch-logo.svg", alt="", srcset="")
+              .ids__stack.L
+              h2 Wanna SDK integration
+
+
+
+
+            .ids__grid-cell-wanna-two-image(style='background-image:url("https://static.tildacdn.com/tild6334-3463-4231-b138-336439343363/99e1cc0fa37ea3e08fbb.jpg")')
+
+
+
+
+          .ids__stack.XS
+          .article-info
+            .ids__grid.XXL.ids__grid-inset-S
+              .ids__grid-cell-small
+                // подзаголовок слева
+                h3 Goals:
+              .ids__grid-cell-big
+                // список (ul), li — пункт списка
+                ul
+                  li Create awareness and excitement around the launch of Gucci new sneaker collection
+                  li Engage Gen-Z customers with Gucci brand and products
+            .divider
+            .ids__grid.XXL.ids__grid-inset-S
+              .ids__grid-cell-small
+                h3 Solution:
+              .ids__grid-cell-big
+                // список (ul), li — пункт списка
+                ul  
+                  li Developing a Lens based on Wanna Sneaker Try-On technology on Snap AR platform
+                  li Running Shoppable AR Ads on Snap platform
+                  li Direct link from Snap lens to Gucci e-commerce website
+            .divider
+            
+            .ids__grid.XXL.ids__grid-inset-S
+              .ids__grid-cell-small
+                h3 Results:
+              .ids__grid-cell-big
+                // список (ul), li — пункт списка, figcaption – дополнительная информация
+                ul  
+                  li 18,9 million reach 
+                  li 24,01 minute - Lens playtime
+                  li 34k - clicks
+                  li Positive ROAS
+                  figcaption Metrics relate to the pilot period which ran between Jan 15th and Apr 15th 2020
+
+
+
+          .ids__stack.XS
+          .article-info
+            .ids__grid.XXL.ids__grid-inset-S
+
+
+              .ids__grid-cell-small
+                .screens
+                  .article-screen
+                    //картинки (экраны телефонов), меняем ссылку
+                    img(src="https://static.tildacdn.com/tild3835-3863-4663-b637-666631623063/noroot.png", alt="", srcset="")
+                  .article-screen
+                    img(src="https://static.tildacdn.com/tild6439-6431-4565-b637-353134653263/ezgifcom-gif-maker_8.gif", alt="", srcset="")        
+
+
+
+
+              .ids__grid-cell-big
+                  // отзыв
+                  h3 "The results of the Virtual Try-On pilot in the China app were impressive, so we decided to bring the AR experience to a global level."
+                  .ids__stack.XS
+                  // автор отзыва
+                  p Carol Hilsum,<br>Senior Director of Innovation, FARFETCH
+      
+      

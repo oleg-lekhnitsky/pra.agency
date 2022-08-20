@@ -1,0 +1,37 @@
+@import 'ids/all';
+@import 'base/all';
+@import 'tmp-styles-pocket';
+
+:root {
+  --ids__font: 'Replica', Arial, sans-serif;
+  --ids__density: 1.4;
+
+  --type-scale-desktop: 1.5; //коэффициент увеличения шрифта десктоп
+  --font-size-min: 16; //размер шрифта мин десктоп
+  --font-size-max: 20; //размер шрифта макс десктоп
+
+  --type-scale-mobile: 1.333; //коэффициент увеличения шрифта телефон
+  --font-size-min-mobile: 17; //размер шрифта мин телефон
+  --font-size-max-mobile: 17; //размер шрифта макс телефон
+
+  //цвета
+  //--ids__background-RGB: 255, 255, 255;
+  --ids__background-RGB: 0, 0, 0;
+  --ids__text-dark-RGB: 0, 0, 0;
+  --ids__text-RGB: 240, 240, 240;
+  --ids__hover-RGB: 235, 200, 20;
+  --ids__link-RGB: 65, 161, 212;
+  --ids__accent-RGB: 0, 100, 240;
+  --ids__main-RGB: var(--ids__accent-RGB);
+  --ids__surface-RGB: 245, 245, 245;
+  --ids__error-RGB: 240, 84, 95;
+  --ids__success-RGB: 84, 180, 140;
+  --ids__mark-RGB: 255, 248, 128;
+  --ids__code-RGB: 65, 95, 155;
+
+  --ids__on-main-RGB: var(--ids__background-RGB);
+  --ids__on-accent-RGB: var(--ids__background-RGB);
+  --ids__on-surface-RGB: var(--ids__text-RGB);
+
+  --ids__outline-RGB: var(--ids__surface-RGB);
+}

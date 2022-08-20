@@ -1,0 +1,48 @@
+extends /layouts/main.pug
+
+block meta
+  +meta(title="InvestSky", description="Simple Investment", og-image="/images/IMG_0202.jpg")
+    
+block content
+  .ids__wrapper.ids__full-width-wanna
+    section 
+      // ссылка на заглавную картинку (первый блок на экране): просто поменять ссылку в скобках, кавычки не удаляем
+      //.cover_articles_mobile(style='background-image:url("/images/logo_3d.png")')
+      .cover_articles(style='background-image:url("https://static.tildacdn.com/tild6664-6637-4131-b537-656563336665/main.gif")')
+
+      //.cover_articles
+        // ссылка на заглавное видео (первый блок на экране)
+        video.cover(autoplay='autoplay', loop='loop', muted='muted', preload='preload')
+          source(src="https://assets.reebok.com/videos/q_auto,f_auto,g_auto/ad452f7bd78d49a19cd4aba301428ce4_d98c/Reebok_Nano_X_Shoes_Black_EH3094_video.mp4")
+        
+
+
+
+
+      .cover-text
+        // заглавная надпись на первом экране
+        h1.landing We Elonmusk 
+          br
+          span your business
+      .cover_main
+        a(href="https://festival.ru/")
+          h2 Wanna. Welcome to Arketing era
+          video.mainpage(autoplay='autoplay', loop='loop', muted='muted', preload='preload')
+            source(src="https://dl.dropboxusercontent.com/s/8shbjarijo6pb98/wanna_site_cover2.mp4?dl=0")
+      .cover_main
+        a(href="https://festival.ru/")
+          h2 Itrex. Redefining IT for 2020s
+          video.mainpage(autoplay='autoplay', loop='loop', muted='muted', preload='preload')
+            source(src="https://dl.dropboxusercontent.com/s/zl1m8pzb3j5sv83/Draft_preview_2.mp4?dl=0")
+
+      .cover_main
+        a(href="https://festival.ru/")
+          h2 Allur. New identity for anautomotive giant
+          video.mainpage(autoplay='autoplay', loop='loop', muted='muted', preload='preload')
+            source(src="https://dl.dropboxusercontent.com/s/o8bzuhvrv2fip1a/render_anya_upd.mp4?dl=0")
+      .cover_main
+        a(href="https://festival.ru/")
+          h2 Gruzin. Restart of Georgian fastfood
+          video.mainpage(autoplay='autoplay', loop='loop', muted='muted', preload='preload')
+            source(src="https://dl.dropboxusercontent.com/s/5ol89vhtwh3cjdf/1_1.mp4?dl=0")
+      
