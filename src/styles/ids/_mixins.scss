@@ -6,11 +6,18 @@ $font-types: (
   'eot': 'embedded-opentype',
 );
 
-@mixin font-face($family, $path, $weight: normal, $style: normal) {
+@mixin font-face(
+  $family,
+  $path,
+  $weight: normal,
+  $style: normal,
+  $display: wrap
+) {
   @font-face {
     font-family: $family;
     font-weight: $weight;
     font-style: $style;
+    font-display: $display;
     @if type-of($path) == 'string' {
       src: font-url('#{$path}.woff2') format('woff2'),
         font-url('#{$path}.woff') format('woff'),

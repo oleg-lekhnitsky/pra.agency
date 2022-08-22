@@ -26,7 +26,7 @@ $ids__fonts-path: '/assets/fonts' !default;
 @include font-face(
   'Root UI',
   'https://336416.selcdn.ru/winvestor-journal/fonts/PT_Root_UI_Medium',
-  500,
+  400,
   normal
 );
 @include font-face(

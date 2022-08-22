@@ -2,10 +2,10 @@ import $ from 'jquery';
 import '../styles/main.scss';
 import './awakeness';
 import './nav-mobile';
-
 import './awake';
-//import './parallax';
+import './parallax';
 import './logos';
+import './form';
 
 $('#slideshow > div:gt(0)').hide();
 
