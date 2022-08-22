@@ -32,8 +32,8 @@
   button,
   a.ids__button-link {
     border: 0;
-    background-color: RGB(var(--ids__accent-RGB));
-    color: RGB(var(--ids__on-accent-RGB));
+    background-color: RGB(var(--ids__link-RGB));
+    color: RGB(var(--ids__text-dark-RGB));
     border-radius: $ids__radius;
     padding: calc(var(--ids__density) * 1em / 3) calc(var(--ids__density) * 1em)
       calc(var(--ids__density) * 1em / 2.5);
@@ -80,11 +80,12 @@
     }
 
     &:hover {
-      background-color: rgba(var(--ids__accent-RGB), 0.8);
+      background-color: rgba(var(--ids__hover-RGB), 1);
+      transition: all ease-in 100ms;
     }
 
     &:focus {
-      box-shadow: 0 0 0 5px RGB(var(--ids__outline-RGB));
+      //box-shadow: 0 0 0 5px RGB(var(--ids__outline-RGB));
       outline: none;
     }
 
@@ -116,10 +117,11 @@
       calc(var(--ids__density) * 1em / 2.5);
     padding-left: calc(var(--ids__density) * 1em / 2);
     border: 1px solid RGB(var(--ids__text-RGB));
-    border-bottom: 2px solid RGB(var(--ids__text-RGB));
+    //border-bottom: 2px solid RGB(var(--ids__text-RGB));
     border-radius: $ids__radius;
     background: transparent;
     color: RGB(var(--ids__text-RGB));
+    //margin-bottom: 1em;
 
     &.XS,
     &.size-XS {
@@ -158,7 +160,8 @@
     }
 
     &:focus {
-      box-shadow: 0 0 0 5px RGB(var(--ids__outline-RGB));
+      //box-shadow: 0 0 0 px RGB(var(--ids__outline-RGB));
+      border-color: RGB(var(--ids__hover-RGB));;
       outline: none;
     }
 

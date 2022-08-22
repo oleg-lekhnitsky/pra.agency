@@ -1071,6 +1071,17 @@ figcaption {
   //height: 240px;
 }
 
+#slideshow2{
+  img{
+    border-radius: 0;
+  }
+}
+.slide-photo{
+  border-radius: 0;
+  img{
+    border-radius: 0;
+  }
+}
 a {
   transition: all ease-out 400ms;
   &:hover {
