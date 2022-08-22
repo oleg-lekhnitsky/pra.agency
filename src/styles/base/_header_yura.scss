@@ -117,6 +117,16 @@ header.awake {
   background-color: black;
   transition: all ease-in 1s;
 }
+.desktop-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.8em 1.6em 0.8em 1.6em;
+  flex-wrap: wrap;
+  width: 100%;
+
+}
+
 .desktop-header {
   display: flex;
   justify-content: space-between;
@@ -267,6 +277,7 @@ header.awake {
     display: none;
   }
 
+
   .nav-item {
     margin-left: 2em;
     font-size: 1em;
@@ -296,6 +307,7 @@ header.awake {
     }
   }
 }
+
 
 .mobile-nav {
   display: none;
