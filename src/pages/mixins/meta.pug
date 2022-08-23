@@ -11,10 +11,10 @@ mixin meta()
   -const ogDescription = attributes['og-description'] || description;
   -const ogUrl = attributes['og-url'] || url;
 
-  -const ogImage = `${host}${attributes['og-image'] || '/images/poster.jpg'}`;
+  -const ogImage = attributes['og-image'] || '/images/og.png';
   -const ogImageType = attributes['og-image-type'] || 'image/jpg';
-  -const ogImageWidth = attributes['og-image-width'] || '2000';
-  -const ogImageHeight = attributes['og-image-height'] || '1145';
+  -const ogImageWidth = attributes['og-image-width'] || '1200';
+  -const ogImageHeight = attributes['og-image-height'] || '627';
   -const ogImageAlt = attributes['og-image-alt'] || title;
 
   -const twitterTitle = attributes['twitter-title'] || title;
