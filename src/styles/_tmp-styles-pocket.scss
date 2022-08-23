@@ -310,6 +310,7 @@ div.label {
 
   @media screen and #{$ids__mobile} {
     width: 100%;
+    padding: 0;
   }
 }
 
@@ -744,7 +745,7 @@ img.album {
     @media screen and #{$ids__mobile} {
       height: 5em;
       width: 100%;
-      padding: 1em 1em 0.8em 1em;
+      //padding: 1em 1em 0.8em 1em;
       margin-bottom: 1em;
     }
   }
