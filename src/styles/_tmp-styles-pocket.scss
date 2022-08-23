@@ -46,6 +46,7 @@ body {
   @media screen and #{$ids__mobile} {
     &.ids__stack.S {
       height: 2em;
+      
     }
   }
 }
@@ -731,11 +732,12 @@ img.album {
       }
 
       &:focus {
-        box-shadow: 0 0 0 5px RGB(var(--ids__outline-RGB));
+        box-shadow: 0 0 0 5px RGB(var(--ids__hover-RGB));
         outline: none;
       }
     }
     @media screen and #{$ids__mobile} {
+      height: 5em;
       width: 100%;
       padding: 1em 1em 0.8em 1em;
       margin-bottom: 1em;

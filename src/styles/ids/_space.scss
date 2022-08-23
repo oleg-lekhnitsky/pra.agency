@@ -49,10 +49,10 @@ $ids__micro-padding: 0 calc(var(--ids__density) * 0.2em);
   &.L,
   &-L {
     //LEGACY NAME
-    height: calc(var(--ids__density) * 8em);
+    height: calc(var(--ids__density) * 2em);
 
     @media screen and #{$ids__mobile} {
-      height: calc(var(--ids__density) * 2em);
+      height: calc(var(--ids__density) * 4em);
     }
   }
   &.XL,
