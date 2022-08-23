@@ -735,6 +735,11 @@ img.album {
         box-shadow: 0 0 0 5px RGB(var(--ids__link-RGB));
         outline: none;
       }
+      &:active {
+        box-shadow: 0 0 0 5px RGB(var(--ids__link-RGB));
+        outline: none;
+      }
+
     }
     @media screen and #{$ids__mobile} {
       height: 5em;
