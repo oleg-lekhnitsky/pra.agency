@@ -508,6 +508,7 @@ img.album {
 }
 
 .cover_main {
+  overflow: hidden;
   position: relative;
   z-index: 1;
   background-color: RGB(var(--ids__text-dark-RGB));
@@ -725,7 +726,7 @@ img.album {
       cursor: pointer;
       transition: all ease-out 500ms;
       &:hover {
-        background-color: rgba(var(--ids__hover-RGB), 0.8);
+        background-color: rgba(var(--ids__hover-RGB), 1);
         transition: all ease-in 100ms;
       }
 
