@@ -508,7 +508,7 @@ img.album {
 }
 
 .cover_main {
-  overflow: hidden;
+  overflow-y: hidden;
   position: relative;
   z-index: 1;
   background-color: RGB(var(--ids__text-dark-RGB));
@@ -795,6 +795,9 @@ img.album {
       transition: all ease-in 100ms;
     }
   }
+
+
+
   h2.awake,
   h3.awake,
   p.awake,
@@ -813,6 +816,21 @@ img.album {
   }
   @media screen and #{$ids__mobile} {
     padding: 0 12px;
+  }
+}
+
+h2.contact,
+h3.contact,
+p.contact,
+li.contact {
+  transform: translateY(0px);
+  opacity: 1;
+  transition: all ease-out 100ms;
+  h2,
+  h3,
+  p,
+  li:hover {
+    transition: all ease-in 100ms;
   }
 }
 
