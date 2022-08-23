@@ -732,7 +732,7 @@ img.album {
       }
 
       &:focus {
-        box-shadow: 0 0 0 5px RGB(var(--ids__hover-RGB));
+        box-shadow: 0 0 0 5px RGB(var(--ids__link-RGB));
         outline: none;
       }
     }
