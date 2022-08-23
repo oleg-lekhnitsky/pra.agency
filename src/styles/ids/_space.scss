@@ -34,7 +34,7 @@ $ids__micro-padding: 0 calc(var(--ids__density) * 0.2em);
     height: calc(var(--ids__density) * 2em);
 
     @media screen and #{$ids__mobile} {
-      height: calc(var(--ids__density) * 1em / 2);
+      height: calc(var(--ids__density) * 1em / 1);
     }
   }
   &.M,
@@ -52,7 +52,7 @@ $ids__micro-padding: 0 calc(var(--ids__density) * 0.2em);
     height: calc(var(--ids__density) * 2em);
 
     @media screen and #{$ids__mobile} {
-      height: calc(var(--ids__density) * 4em);
+      height: calc(var(--ids__density) * 3em);
     }
   }
   &.XL,
