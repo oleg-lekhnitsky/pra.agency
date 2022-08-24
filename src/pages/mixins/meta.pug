@@ -10,7 +10,6 @@ mixin meta()
   -const ogTitle = attributes['og-title'] || title;
   -const ogDescription = attributes['og-description'] || description;
   -const ogUrl = attributes['og-url'] || url;
-
   -const ogImage = `${host}${attributes['og-image'] || '/images/og.png'}`;
   -const ogImageType = attributes['og-image-type'] || 'image/png';
   -const ogImageWidth = attributes['og-image-width'] || '2000';
@@ -45,3 +44,4 @@ mixin meta()
   meta(name="twitter:title" content=twitterTitle)
   meta(name="twitter:description" content=twitterDescription)
   meta(name="twitter:url" content=twitterUrl)
+  meta(name="twitter:card" content=ogImage)
