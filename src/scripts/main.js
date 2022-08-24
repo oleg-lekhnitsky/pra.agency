@@ -6,5 +6,5 @@ import './awake';
 import './parallax';
 import './slideshow';
 import './logos';
-//import './form';
+import './form';
 

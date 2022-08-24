@@ -19,7 +19,8 @@ block content
                             a(href="/design-system") email&nbsp;us
 
                 .grid-cell-big
-                    form(action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfgwK3oNeXELQBVFFWBhsNe3ncrMdboEZK_6ZIJLL7_V8Y7CQ/formResponse", method="post") 
+  
+                    form(action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfgwK3oNeXELQBVFFWBhsNe3ncrMdboEZK_6ZIJLL7_V8Y7CQ/formResponse", method="post", onsubmit="window.location.href = 'http://localhost:1234/';return false") 
                         h3.contact Your name
                             input(type="text", placeholder='John Doe', name="entry.509103056",  aria-describedby="i2 i3")
                         h3.contact Email    
@@ -29,6 +30,3 @@ block content
                         button(type="submit") Submit form
         .ids__stack.XS
     include /partials/footer_contact.pug
-    
-
-

@@ -1,3 +1,5 @@
+if (document.querySelector('.cover_articles')) {
+
 let objectElement = document.querySelector('.cover_articles');
 let containerElement = document.querySelector('.cover_articles');
 
@@ -7,7 +9,6 @@ let interpolate = function(b, h, H, start, finish) {
 };
 
 let parallax = function() {
-  console.log(containerElement);
   let rect = containerElement.getBoundingClientRect();
   let b = rect.bottom;
   let h = rect.height;
@@ -21,3 +22,4 @@ let parallax = function() {
 };
 
 document.addEventListener('scroll', parallax);
+}

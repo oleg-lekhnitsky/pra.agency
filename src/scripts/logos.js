@@ -1,3 +1,7 @@
+
+//import $ from 'jquery';
+if (document.querySelector('.customer-logos')) {
+
 $(document).ready(function() {
   $('.customer-logos').slick({
     slidesToShow: 6,
@@ -23,3 +27,4 @@ $(document).ready(function() {
     ],
   });
 });
+}
