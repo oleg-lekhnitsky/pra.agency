@@ -1069,7 +1069,7 @@ figcaption {
   justify-content: space-between;
 
   .ids__grid-cell-left {
-    width: 65%;
+    width: 58%;
 
     @media screen and #{$ids__mobile} {
       width: 100%;
@@ -1077,7 +1077,7 @@ figcaption {
   }
 
   .ids__grid-cell-awards {
-    width: 32%;
+    width: 39%;
     .divider {
       background-color: RGB(var(--ids__text-RGB));
       margin: 1em 0em;
