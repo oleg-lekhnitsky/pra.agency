@@ -1,0 +1,135 @@
+extends /layouts/main.pug
+
+block meta
+  +meta(title="About", description="Who are Pocket Rocket", og-image="/images/og.png")
+
+
+
+
+block content
+
+
+
+
+
+  .ids__wrapper.ids__full-width-wanna
+    section 
+      // ссылка на заглавную картинку (первый блок на экране): просто поменять ссылку в скобках, кавычки не удаляем
+      //.cover_articles_mobile(style='background-image:url("/images/logo_3d.png")')
+      //.cover_articles(style='background-image:url("/images/logo_3d.png")')
+
+      .cover_articles
+        // ссылка на заглавное видео (первый блок на экране)
+        video.cover(autoplay='autoplay', loop='loop', muted='muted', preload='preload')
+          source(src="https://dl.dropboxusercontent.com/s/xc5p5o14y18upzg/wanna_edit_guys_site.mp4?dl=0")
+
+
+
+
+      .cover-text
+        // заглавная надпись на первом экране
+        //h1.cover Pocket Rocket is an&nbsp;innovative branding&nbsp;agency. We help businesses grow up to&nbsp;an&nbsp;extra 30%&nbsp;a&nbsp;year.
+      .dark-wrapper
+        .ids__wrapper-center  
+          .ids__text
+            h1.landing Wanna
+            h1 Welcome to the ARketing era
+
+          .ids__grid.XXL.ids__grid-inset-S
+            .ids__grid-cell
+              .ids__stack.M
+              h3 Disciplines:
+              h5
+                ul  
+                  li Brand platform & strategy
+                  li Employer brand strategy
+                  li Communication strategy
+                  li Brand identity
+                  li Concept development
+                  li Brand implementation & management
+                  li Digital product curation
+                  li Communication design  
+            .ids__grid-cell-small
+              .ids__stack.M
+              p Wanna is a leading Fashion-Tech company that invented a hyper-realistic AR technology for trying on footwear and accessories. Its power was unleashed during the lockdown when it turned into a lifesaver for major brands that were desperate to tackle shopping barriers in the way of customers. In an instant, Wanna opened the door - on a global scale - for Gucci, Farfetch, Snapchat, Reebok and many others.
+              p Such heady success required an immediate boost to their positioning. And we jumped on board to do exactly that by developing an innovative solution, framed within a futuristic design that matched both business and fashion criteria. While elaborating on positioning, we came up with the name for the whole industry and took up the leading spot in it.
+              p May we present Wanna – Fashion ARketing.
+              .ids__stack.XXS 
+              a(href="") Read more 
+
+          .ids__stack.M
+          .cover_incase
+            a(href="https://wanna.fashion")
+                video.cases(autoplay='autoplay', loop='loop', muted='muted', preload='preload')
+                  source(src=" https://dl.dropboxusercontent.com/s/ycp1bjkpjv0u891/wanna_edit_site.mp4?dl=0")
+          .ids__text
+            .ids__stack.S
+            h1 A logo that speaks of innovation and&nbsp;carries itself with&nbsp;style
+          .cover_incase
+            img(src="https://static.tildacdn.com/tild6166-3535-4637-b535-356231303434/girl.gif", alt="")
+          .cover_incase
+            img(src="https://static.tildacdn.com/tild3936-6532-4031-a561-336139316634/wanna_guy.png", alt="")
+          .cover_incase
+            img(src="https://static.tildacdn.com/tild3432-6331-4631-a236-303734636334/Slogan2.svg", alt="")
+          .ids__stack.M
+          .quote
+            figure.XS 
+                img(src="https://static.tildacdn.com/tild3039-3266-4263-a534-633634323235/__2021-03-26__123040.png", alt="")
+            .grid-cell-big
+              H1 "Guys from Pocket Rocket helped us to&nbsp;redefine our&nbsp;business and&nbsp;communication strategy. Their professionalism, passion for&nbsp;work and&nbsp;experience were key to&nbsp;the&nbsp;success of&nbsp;new&nbsp;positioning"
+              
+              p Sergey Arhangelskiy,
+                br 
+                span CEO at Wanna
+          .ids__stack.M
+
+
+          .ids__text
+            .ids__stack.S
+            h1 The Color & Grid system helps to create the innovative mood & arrange data
+          .cover_main
+            a(href="https://wanna.fashion")
+                video.cases(autoplay='autoplay', loop='loop', muted='muted', preload='preload')
+                  source(src="https://dl.dropboxusercontent.com/s/vbtw55qqb7hov1j/Type_color_fin.mp4?dl=0")
+          .ids__stack.M
+
+
+
+
+          .quote
+            figure.XS 
+                img(src="https://static.tildacdn.com/tild6338-3763-4538-b861-646433373738/__2021-03-26__121713.png", alt="")
+            .ids__full_width
+              H1 "We expected our&nbsp;branding to&nbsp;be&nbsp;in&nbsp;live with&nbsp;the&nbsp;company strategic plan on&nbsp;expansion, and&nbsp;be&nbsp;ready to&nbsp;boost the&nbsp;awareness of&nbsp;our products. Pocket Rocket delivered that"
+              
+              p Dmitry Rogozhkin,
+                br 
+                span Head of Business Development at Wanna
+
+
+          .ids__stack.M 
+          .ids__stack.S
+          h1 Take a look at other cases
+          .ids__grid.XL.ids__grid-inset-S
+
+            .ids__grid-cell
+              a(href="https://wanna.fashion")
+                figure 
+                  img(src="images/allur_cover.png", alt="")
+                h3 Allur. New identity for an automotive giant
+            .ids__grid-cell
+              a(href="https://wanna.fashion")
+                figure
+                  img(src="images/itrex_cover.png", alt="")      
+                h3 ItRex. Redefining IT for 2020s
+            .ids__grid-cell
+              a(href="https://wanna.fashion")
+                figure 
+                  img(src="images/gruzin_cover.png", alt="")
+                h3 Gruzin. Restart of Georgian fastfood
+
+
+
+      
+      include /partials/footer_design_review.pug
+

@@ -478,8 +478,8 @@ img.album {
     //position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
     z-index: -5;
   }
   video.mainpage {
@@ -495,7 +495,20 @@ img.album {
       display: none;
     }
   }
+  video.cases {
+    object-fit: cover;
+    //position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -5;
+    border-radius: 1em;
+    @media screen and #{$ids__mobile} {
 
+      display: none;
+    }
+  }
   @media screen and #{$ids__mobile} {
     //padding: 0 calc(var(--ids__density) * 0.1em);
     padding: 0%;
@@ -531,7 +544,7 @@ img.album {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top right;
-  width: 100vw;
+  width: 100%;
   height: auto;
   image-rendering: optimizeQuality;
   //filter: blur(2px);
@@ -539,6 +552,52 @@ img.album {
   align-items: center;
   translate: all ease-in 2s;
   overflow-x: hidden;
+  @media screen and #{$ids__mobile} {
+    height: 30em;
+    background-position: center center;
+    background-size: cover;
+  }
+  h2 {
+    position: absolute;
+    bottom: 0.5em;
+    left: 1.2em;
+    transition: all ease-out 400 ms;
+    line-height: 1em;
+    @media screen and #{$ids__mobile} {
+      bottom: 0em;
+      left: 12px;
+      right: 12px;
+    }
+  }
+  a {
+    color: RGB(var(--ids__text-RGB));
+    border-bottom: none;
+    line-height: 0%;
+    &:hover {
+      color: RGB(var(--ids__text-RGB));
+    }
+  }
+}
+
+.cover_incase {
+  overflow-y: hidden;
+  position: relative;
+  z-index: 1;
+  background-color: RGB(var(--ids__text-RGB));
+  background-image: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top right;
+  width: 100%;
+  height: auto;
+  image-rendering: optimizeQuality;
+  //filter: blur(2px);
+  display: flex;
+  align-items: center;
+  translate: all ease-in 2s;
+  overflow-x: hidden;
+  margin-bottom: 2em;
+  border-radius: 1em;
   @media screen and #{$ids__mobile} {
     height: 30em;
     background-position: center center;
@@ -1171,4 +1230,11 @@ a {
     background-repeat: no-repeat;
     background-position: center;
   }
+}
+
+
+.quote{
+  width: 100%;
+  display: inline-flex;
+  gap: 2em;
 }
