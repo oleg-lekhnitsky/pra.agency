@@ -603,6 +603,10 @@ img.album {
     background-position: center center;
     background-size: cover;
   }
+
+  &.main{
+    background-color: transparent;
+  }
   h2 {
     position: absolute;
     bottom: 0.5em;

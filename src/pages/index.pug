@@ -24,25 +24,27 @@ block content
         h1.landing We Elonmusk 
           br
           span your business
-      .cover_main(style='background-image:url("/images/wanna_cover.png")')
-        a(href="/wanna")
-          h2 Wanna. Welcome to Arketing era
-          video.mainpage(autoplay='autoplay', loop='loop', muted='muted', preload='preload')
-            source(src="https://dl.dropboxusercontent.com/s/8shbjarijo6pb98/wanna_site_cover2.mp4?dl=0")
-      .cover_main(style='background-image:url("/images/itrex_cover.png")')
-        a(href="https://pocketrocket.agency/itrex")
-          h2 Itrex. Redefining IT for 2020s
-          video.mainpage(autoplay='autoplay', loop='loop', muted='muted', preload='preload')
-            source(src="https://dl.dropboxusercontent.com/s/zl1m8pzb3j5sv83/Draft_preview_2.mp4?dl=0")
+    .dark-wrapper
+      .ids__wrapper-center  
+        .cover_incase(style='background-image:url("/images/wanna_cover.png")')
+          a(href="/wanna")
+            video.cases.main(autoplay='autoplay', loop='loop', muted='muted', preload='preload')
+              source(src="https://dl.dropboxusercontent.com/s/8shbjarijo6pb98/wanna_site_cover2.mp4?dl=0")
+            h2 Wanna. Welcome to Arketing era
+        .cover_incase.main(style='background-image:url("/images/itrex_cover.png")')
+          a(href="https://pocketrocket.agency/itrex")
+            h2 Itrex. Redefining IT for 2020s
+            video.cases(autoplay='autoplay', loop='loop', muted='muted', preload='preload')
+              source(src="https://dl.dropboxusercontent.com/s/zl1m8pzb3j5sv83/Draft_preview_2.mp4?dl=0")
 
-      .cover_main(style='background-image:url("/images/allur_cover.png")')
-        a(href="https://pocketrocket.agency/allur")
-          h2 Allur. New identity for anautomotive giant
-          video.mainpage(autoplay='autoplay', loop='loop', muted='muted', preload='preload')
-            source(src="https://dl.dropboxusercontent.com/s/o8bzuhvrv2fip1a/render_anya_upd.mp4?dl=0")
-      .cover_main(style='background-image:url("/images/gruzin_cover.png")')
-        a(href="https://pocketrocket.agency/gruzin")
-          h2 Gruzin. Restart of Georgian fastfood
-          video.mainpage(autoplay='autoplay', loop='loop', muted='muted', preload='preload')
-            source(src="https://dl.dropboxusercontent.com/s/5ol89vhtwh3cjdf/1_1.mp4?dl=0")
-      include /partials/footer_design_review.pug
+        .cover_incase.main(style='background-image:url("/images/allur_cover.png")')
+          a(href="https://pocketrocket.agency/allur")
+            h2 Allur. New identity for an automotive giant
+            video.cases(autoplay='autoplay', loop='loop', muted='muted', preload='preload')
+              source(src="https://dl.dropboxusercontent.com/s/o8bzuhvrv2fip1a/render_anya_upd.mp4?dl=0")
+        .cover_incase.main(style='background-image:url("/images/gruzin_cover.png")')
+          a(href="https://pocketrocket.agency/gruzin")
+            h2 Gruzin. Restart of Georgian fastfood
+            video.cases(autoplay='autoplay', loop='loop', muted='muted', preload='preload')
+              source(src="https://dl.dropboxusercontent.com/s/5ol89vhtwh3cjdf/1_1.mp4?dl=0")
+    include /partials/footer_design_review.pug
