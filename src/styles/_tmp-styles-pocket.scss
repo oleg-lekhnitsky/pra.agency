@@ -596,7 +596,7 @@ img.album {
   align-items: center;
   translate: all ease-in 2s;
   overflow-x: hidden;
-  margin-bottom: 2em;
+  margin-top: 1em;
   border-radius: 1em;
   @media screen and #{$ids__mobile} {
     height: 30em;
@@ -606,6 +606,7 @@ img.album {
 
   &.main{
     background-color: transparent;
+    margin-top: 2em;
   }
   h2 {
     position: absolute;
@@ -918,6 +919,12 @@ li.contact {
   p,
   li:hover {
     transition: all ease-in 100ms;
+  }
+}
+
+h2.cover{
+  @media screen and #{$ids__mobile} {
+    padding: .5em .5em;
   }
 }
 
