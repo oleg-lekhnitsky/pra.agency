@@ -1199,9 +1199,11 @@ a {
   transition: all ease-out 400ms;
   &:hover {
     transition: all ease-in 50ms;
-  }
-}
 
+}}
+a.case{
+  color: RGB(var(--ids__text-RGB));
+}
 
 .test, .test1{   
   padding-left: 1.2em;
