@@ -304,9 +304,12 @@ div.label {
 }
 
 .ids__grid-cell-big {
-  background-color: RGB(var(--ids__text-RGB));
+  //background-color: RGB(var(--ids__text-RGB));
   //padding: 1em 1em 1em 1em;
   //border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 40%;
 
   @media screen and #{$ids__mobile} {
@@ -327,7 +330,7 @@ div.label {
 }
 
 .ids__grid-cell-small {
-  width: 50%;
+  width: 49%;
   //padding: 1em 1em 1em 1em;
   //border-radius: 1em;
 }
@@ -471,6 +474,7 @@ img.album {
 
 .ids__full-width-wanna {
   width: 100%;
+  
   //padding: 0 calc(var(--ids__density) * 3em);
   //padding: 0 calc(var(--ids__density) * 4em);
   video.cover {
@@ -832,10 +836,10 @@ img.album {
 }
 
 .divider {
-  background-color: RGB(var(--ids__text-dark-RGB));
+  background-color: RGB(var(--ids__text-RGB));
   height: 1px;
   width: 100%;
-  margin: 0.5em auto;
+  margin: 2em auto;
 }
 
 .divider_white {
@@ -862,6 +866,7 @@ img.album {
 .dark-wrapper {
   padding-top: 4em;
   width: 100%;
+  //max-width: 70em;
   height: auto;
   background-color: RGB(var(--ids__text-dark-RGB));
   z-index: 4;
@@ -1186,6 +1191,8 @@ figcaption {
 
 #slideshow2{
   img{
+    height: 4em;
+    width: auto;
     border-radius: 0;
   }
 }
