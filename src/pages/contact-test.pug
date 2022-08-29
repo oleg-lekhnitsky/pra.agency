@@ -1,0 +1,33 @@
+extends /layouts/main.pug
+
+block meta
+  +meta(title="Contact", description="Let's talk", og-image="/images/og.png")
+
+block content
+  .ids__wrapper.ids__full-width-wanna
+    section 
+    .ids__wrapper-center  
+        .dark-wrapper
+            .ids__stack.L
+            h1 Let's talk about your project
+            .ids__stack.XS   
+            .ids__grid.M.ids__grid-inset-L
+                .grid-cell
+                    h3.contact We're open to work
+                        br
+                        span Fill out the form or email&nbsp;us&nbsp;at
+                        br
+                        span dareen@pocketrocket.agency
+
+                .grid-cell-big
+  
+                    form(action="https://fabform.io/f/{g3AccXz}", method="post") 
+                        h3.contact Your name
+                            input(type="text", placeholder='John Doe', name="entry.509103056",  aria-describedby="i2 i3")
+                        h3.contact Email    
+                            input(type="email", placeholder='example@mail.com', name="entry.1736051892", aria-describedby="i6 i7")
+                        h3.contact Message    
+                            textarea(type="text", placeholder='Tell us about your project', name="entry.379523", aria-describedby="i10 i11")
+                        button(type="submit") Submit form
+        .ids__stack.XS
+    include /partials/footer_contact.pug
