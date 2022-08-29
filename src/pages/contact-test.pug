@@ -24,14 +24,13 @@ block content
 
                 .grid-cell-big
   
-                    form(action="https://fabform.io/f/ST85raa", method="post") 
+                    form(action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfgwK3oNeXELQBVFFWBhsNe3ncrMdboEZK_6ZIJLL7_V8Y7CQ/formResponse", method="post", onsubmit="window.location.href = 'http://localhost:1234/';return false") 
                         h3.contact Your name
-                            input(type="text", placeholder='John Doe', name="name")
+                            input(type="text", placeholder='John Doe', name="entry.509103056",  aria-describedby="i2 i3")
                         h3.contact Email    
-                            <label for="email">Your Email</label>
-                            input(type="email", placeholder='example@mail.com', name="email")
+                            input(type="email", placeholder='example@mail.com', name="entry.1736051892", aria-describedby="i6 i7")
                         h3.contact Message    
-                            textarea(type="text", placeholder='Tell us about your project', name="message")
+                            textarea(type="text", placeholder='Tell us about your project', name="entry.379523", aria-describedby="i10 i11")
                         button(type="submit") Submit form
         .ids__stack.XS
     include /partials/footer_contact.pug
