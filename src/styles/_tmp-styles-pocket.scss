@@ -333,6 +333,9 @@ div.label {
   width: 49%;
   //padding: 1em 1em 1em 1em;
   //border-radius: 1em;
+  @media screen and #{$ids__mobile} {
+    width: 100%;
+  }
 }
 
 .ids__grid-cell-small-contact {
@@ -756,7 +759,7 @@ img.album {
   justify-items: stretch;
   width: 100%;
   //box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-  padding: 0.1em 0.5em 0.5em 2em;
+  //padding: 0.1em 0.5em 0.5em 2em;
   border-radius: 1.5em;
   align-content: space-between;
   background-color: RGB(var(--ids__text-RGB));
@@ -764,14 +767,12 @@ img.album {
   //max-width: 50em;
 
   @media screen and #{$ids__mobile} {
-    width: 100%;
-    padding: 1em 1em 0.8em 1em;
-    margin-bottom: 1em;
+
   }
 
   .ids__grid-cell-big-contact {
     display: flex;
-    width: 62%;
+    width: 100%;
     border-radius: 1em;
     overflow: hidden;
     align-content: center;
@@ -830,7 +831,7 @@ img.album {
       height: 5em;
       width: 100%;
       //padding: 1em 1em 0.8em 1em;
-      margin-bottom: 1em;
+      //margin-bottom: 1em;
     }
   }
 }
@@ -1142,7 +1143,10 @@ figcaption {
   align-content: space-between;
   flex-wrap: wrap;
   justify-content: space-between;
-
+  @media screen and #{$ids__mobile} {
+    width: 100%;
+    flex-direction: column;
+  }
   .ids__grid-cell-left {
     width: 58%;
 
@@ -1191,8 +1195,9 @@ figcaption {
 
 #slideshow2{
   img{
-    height: 4em;
-    width: auto;
+    //height: 10em;
+    width: 100%;
+    height: auto;
     border-radius: 0;
   }
 }

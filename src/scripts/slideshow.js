@@ -10,7 +10,7 @@ setInterval(function() {
     .fadeIn(0)
     .end()
     .appendTo('#slideshow');
-}, 400);
+}, 200);
 
 
 
@@ -24,4 +24,4 @@ setInterval(function() {
     .fadeIn(0)
     .end()
     .appendTo('#slideshow2');
-}, 1000);
+}, 400);
