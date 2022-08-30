@@ -1,7 +1,7 @@
 extends /layouts/main.pug
 
 block meta
-  +meta(title="About our services and our team", description="We hate bad branding, so we have to do good.", og-image="/images/og.png")
+  +meta(title="About", description="Who are Pocket Rocket", og-image="/images/og.png")
 
 
 
@@ -32,16 +32,18 @@ block content
       .dark-wrapper
         .ids__wrapper-center  
           .ids__grid.XXL.ids__grid-inset-S
-            .ids__grid-cell-big
+            .ids__grid-cell-wanna-two
 
               
               // подпись к карточке под логотипом партнера
               h2 We are a&nbsp;diverse team of&nbsp;thinkers &&nbsp;doers.
-              .ids__stack.S
-              h3 We develop strategies, design identities and launch brands in&nbsp;IT, Fashion Tech, Telecom, Transport &&nbsp;Retail.
+              .ids__stack.M
+              h2 We develop strategies, design identities and launch brands in&nbsp;IT, Fashion Tech, Telecom, Transport &&nbsp;Retail.
 
 
-            .ids__grid-cell-small
+
+            // карточка с картинкой (меняем ссылкуб кавычки не удаляем)
+            .ids__grid-cell-wanna-two-image 
                       #slideshow
                         .slide
                           img(src="/images/Lizaveta.png")
@@ -55,8 +57,6 @@ block content
                           img(src="/images/Oleg.png")
                         .slide
                           img(src="/images/Yuli.png")
-                        .slide
-                          img(src="/images/Anya.png")                          
                         .slide
                           img(src="/images/Mikita.png")
                         .slide
@@ -73,22 +73,21 @@ block content
                           img(src="/images/Alice.png")
                         .slide  
                           img(src="/images/Alina.png")
-                        .slide  
-                          img(src="/images/Kate.png")
-                        .slide  
-                          img(src="/images/Ira.png")                          
 
 
 
           .ids__stack.M
           .grid_headings
-            .ids__grid-cell-awards
-              h1.landing Our services
-            .ids__grid-cell-small
-
-
-                    h1 Brand Strategy Development
-
+            .ids__grid-cell-left
+              h1 Our services
+              .article-info
+                .ids__grid.XXL.ids__grid-inset-S
+                  .ids__grid-cell-small
+                    // подзаголовок слева
+                    h2 Brand Strategy Development
+                  .ids__grid-cell-big
+                    // список (ul), li — пункт списка. добавить пункт: li, пробел, текст
+                    //li в столбике на одном уроне
                     ul
                       li Market Research & Benchmarking
                       li Business & Product Research
@@ -101,12 +100,13 @@ block content
                       li Employer Brand Strategy
                       li Focus Groups
                       li Brand Architecture
-                    .divider
-
-
-
-                    h1 Brand Development
-
+                .divider
+                .ids__grid.XXL.ids__grid-inset-S
+                  // подзаголовок слева
+                  .ids__grid-cell-small
+                    h2 Brand Development
+                  .ids__grid-cell-big
+                    // список (ul), li — пункт списка
                     ul  
                       li Logo Design
                       li Visual Identity
@@ -115,25 +115,26 @@ block content
                       li Guidelines &&nbsp;Brandbook
                       li Brand Implementation
                       li Naming
-                    .divider
+                .divider
+                .ids__grid.XXL.ids__grid-inset-S
+                  // подзаголовок слева
+                  .ids__grid-cell-small
+                    h2 Employer Brand Development
 
-
-
-                    h1 Employer Brand Development
-
-
-
+                  // список (ul), li — пункт списка, figcaption – дополнительная информация
+                  .ids__grid-cell-big
                     ul  
                       li Employer brand strategy
                       li Culture, EVP and&nbsp;employee experience
                       li Onboarding Toolkits
-                    .divider  
+                .divider
+                .ids__grid.XXL.ids__grid-inset-S
+                  // подзаголовок слева
+                  .ids__grid-cell-small
+                    h2 Brand Launch &&nbsp;Support
 
-   
-                    h1 Brand Launch &&nbsp;Support
-
-
-
+                  // список (ul), li — пункт списка, figcaption – дополнительная информация
+                  .ids__grid-cell-big
                     ul  
                       li New Brand Pitch Engaging & Onboarding Teams
                       li Draft Launch Strategy
@@ -143,55 +144,56 @@ block content
                       li Digital product design
                       li Event design
                       li Environmental and retail design
-          .ids__stack.M
-          .ids__grid.XXL.ids__grid-inset-S
+
             .ids__grid-cell-awards
-                  h1.landing Awards
-                  h3 We’ve got several Oscars of&nbsp;design world
+                  h1 Awards
+                  h3 We’ve got several Oscars of&nbsp;design world:
 
-            .ids__grid-cell-small
+                  .ids__grid-cell
+                    // подзаголовок слева
+                    ul 
+                      li 
+                        a(href="https://www.red-dot.org")  
+                          h3 Red Dot Design Awards 2021
+                        p Wanna, ItRex
+                        p Branding – Winner
+                        .divider
+                      li 
+                        a(href="https://oneshow.org/")   
+                          h3 The One Show 2021
+                        p Wanna
+                        p Branding – Merit
+                        .divider
+                      li 
+                        a(href="https://www.effie.org/")
+                          h3 Effie 2021
+                        p Generation Z
+                        p Project – Special Prize
+                        .divider
+                      li 
+                        a(href="https://adfest.by/en")
+                          h3 White Square 2021
+                        p Wanna
+                        p Branding – Bronze
+                        .divider
+                      li 
+                        a(href="https://creative-stories.com.ua/")
+                          h3 KIAF 2021
+                        p Wanna, ItRex
+                        p Branding – Silver, Branding – Shortlist
+                        .divider
 
-
-                      a(href="https://www.red-dot.org")  
-                        h3 Red Dot Design Awards 2021
-                      p Wanna, ItRex
-                      p Branding – Winner
-                      .divider
-                      a(href="https://oneshow.org/")   
-                        h3 The One Show 2021
-                      p Wanna
-                      p Branding – Merit
-                      .divider
-
-                      a(href="https://www.effie.org/")
-                        h3 Effie 2021
-                      p Generation Z
-                      p Project – Special Prize
-                      .divider
-
-                      a(href="https://adfest.by/en")
-                        h3 White Square 2021
-                      p Wanna
-                      p Branding – Bronze
-                      .divider
-
-                      a(href="https://creative-stories.com.ua/")
-                        h3 KIAF 2021
-                      p Wanna, ItRex
-                      p Branding – Silver, Branding – Shortlist
-                      .divider
-
-
-                      a(href="https://www.canneslions.com/enter/young-lions-competitions")
-                        h3 Young Cannes Lions
-                      p No silence for violence
-                      p Design – Gold
-                      .divider
-
-                      a(href="https://festival.ru/") 
-                        h3 Red Apple Awards
-                      p Wanna, ItRex
-                      p Branding – Bronze, Branding – Silver
+                      li 
+                        a(href="https://www.canneslions.com/enter/young-lions-competitions")
+                          h3 Young Cannes Lions
+                        p No silence for violence
+                        p Design – Gold
+                        .divider
+                      li
+                        a(href="https://festival.ru/") 
+                          h3 Red Apple Awards
+                        p Wanna, ItRex
+                        p Branding – Bronze, Branding – Silver
           .ids__stack.M
           h2 Trusted by industry icons and&nbsp;young startups:
           include /partials/logos.pug
@@ -214,28 +216,19 @@ block content
               .ids__stack.XS
               #slideshow2
                 .slide-photo
-                  img(src="/images/1.jpeg")
+                  img(src="/images/Frame 21.png")
                 .slide-photo
-                  img(src="/images/2.jpeg")
+                  img(src="/images/Frame 22.png")
                 .slide-photo
-                  img(src="/images/3.jpeg")
+                  img(src="/images/Frame 23.png")
                 .slide-photo
-                  img(src="/images/4.png")
+                  img(src="/images/Frame 24.png")
                 .slide-photo
-                  img(src="/images/5.png")
+                  img(src="/images/Frame 25.png")
                 .slide-photo
-                  img(src="/images/6.png")
+                  img(src="/images/Frame 26.png")
                 .slide-photo
-                  img(src="/images/7.png")
-                .slide-photo
-                  img(src="/images/8.png")   
-                .slide-photo
-                  img(src="/images/9.png")    
-                .slide-photo
-                  img(src="/images/10.png")   
-                .slide-photo
-                  img(src="/images/11.png")   
-                                                                                            
+                  img(src="/images/Frame 28.png")
 
               .ids__stack.XS
               h1 And this is how we do it:
@@ -246,7 +239,7 @@ block content
               figure.XS
                 img(src="/images/briefing.svg")
               h2 Briefing
-              h5 Debrief, Set goals. Define Agency Task, Timing & Budget
+              p Debrief, Set goals. Define Agency Task, Timing & Budget
             .ids__grid-cell
               figure.XS
                 img(src="/images/research.svg")
@@ -266,7 +259,7 @@ block content
               figure.XS
                 img(src="/images/engagement.svg")
               h2 Engagement
-              h5 Engage & consult teams, deliver guides, support &&nbsp;art-direct
+              h5 Engage & consult teams, deliver guides, support & art-direct
               
 
       include /partials/footer_design_review.pug

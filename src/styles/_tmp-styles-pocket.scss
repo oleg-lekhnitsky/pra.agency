@@ -603,7 +603,7 @@ img.album {
   align-items: center;
   translate: all ease-in 2s;
   overflow-x: hidden;
-  margin-top: 1em;
+  margin-bottom: .5em;
   border-radius: 1em;
   @media screen and #{$ids__mobile} {
     height: 30em;
@@ -613,7 +613,7 @@ img.album {
 
   &.main{
     background-color: transparent;
-    margin-top: 2em;
+    margin-top: 4em;
   }
   h2 {
     position: absolute;
