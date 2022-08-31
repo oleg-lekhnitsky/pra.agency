@@ -1264,3 +1264,27 @@ a.case{
   display: inline-flex;
   gap: 2em;
 }
+
+.social-icons{
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin-top: 8em;
+  @media screen and #{$ids__mobile} {
+    margin-top: 1em;
+    gap: 1em;
+  }
+  .nav-item {
+    transition: all ease-out 400ms;
+    &:hover {
+      transition: all ease-in 50ms;
+      transform: scale(.95);
+  
+  }}
+  img{
+    height: 10em;
+    @media screen and #{$ids__mobile} {
+      height: 4em;
+    }
+  }
+}
