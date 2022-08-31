@@ -3,7 +3,6 @@
     padding: 0;
     z-index: 1000;
     left: 0;
-    transition: background-color 20s ease-in-out;
   }
 }
 
@@ -17,81 +16,7 @@
   //   display: none;
   // }
 
-  &.waves {
-    background-image: url('/images/wave-4.png');
-    height: 40em;
-    background-size: cover;
-    background-position: center;
-    overflow-x: hidden;
-    top: -15em;
 
-    @media #{$ids__mobile} {
-      top: 0em;
-    }
-  }
-
-  &.pink-top {
-    background-image: radial-gradient(
-      closest-side,
-      rgba(140, 85, 255, 0.2),
-      rgba(var(--ids__hover-RGB), 0)
-    );
-    top: -15em;
-    height: 40em;
-    left: 30%;
-    overflow-x: hidden;
-    z-index: -99999;
-  }
-
-  &.violet {
-    background-image: radial-gradient(
-      closest-side,
-      rgba(140, 85, 255, 0.2),
-      rgba(var(--ids__hover-RGB), 0)
-    );
-    margin-top: -10em;
-    height: 35em;
-    left: 50%;
-    overflow-x: hidden;
-  }
-
-  &.green {
-    // background-color: green;
-    background-image: radial-gradient(
-      closest-side,
-      rgba(0, 255, 150, 0.25),
-      rgba(0, 255, 150, 0)
-    );
-
-    height: 35em;
-    left: -70%;
-    overflow-x: hidden;
-  }
-
-  &.pink {
-    background-image: radial-gradient(
-      closest-side,
-      rgba(140, 85, 255, 0.2),
-      rgba(var(--ids__hover-RGB), 0)
-    );
-    top: 5em;
-    height: 35em;
-    left: 40%;
-    z-index: 0;
-    overflow-x: hidden;
-  }
-  &.blue {
-    // background-color: green;
-    background-image: radial-gradient(
-      closest-side,
-      rgba(0, 155, 250, 0.3),
-      rgba(0, 155, 250, 0)
-    );
-    margin-top: -10em;
-    height: 50em;
-    left: -50%;
-    z-index: -1;
-  }
 
   &.sleep {
     opacity: 0;
@@ -187,7 +112,7 @@ header.awake {
     }
     color: RGB(var(--ids__text-RGB));
     @media #{$ids__mobile} {
-      font-size: 1.2em;
+      font-size: 1em;
       // margi
     }
 
@@ -281,7 +206,7 @@ header.awake {
   .nav-item {
     margin-left: 2em;
     font-size: 1em;
-
+    
     a {
       font-weight: 400;
       border-bottom: 0;
@@ -372,11 +297,13 @@ header.awake {
     background-color: rgba(var(--ids__text-dark-RGB), 0.9);
     z-index: 10000;
     opacity: 0;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease-out;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     color: rgba(var(--ids__text-RGB), 1);
     border-radius: 0em 0em 0em 0em;
+    
+    
 
     .nav-item {
       margin-bottom: 0.5em;
@@ -407,13 +334,21 @@ header.awake {
     }
 
     &.visible {
+      transition: all  ease-in 500ms;
       right: 0;
       opacity: 1;
     }
 
     .mobile-sidebar-copywrite {
+      display: inline-flex;
+      align-items: left;
+      flex-wrap: wrap;
       position: absolute;
       bottom: 0.5em;
+      gap: .5em;
+      img{
+        height: 2em;
+      }
     }
   }
 }
